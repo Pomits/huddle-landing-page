@@ -1,11 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Huddle landing page with curved sections</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+
 </head>
 <body>
+
+
+  <header class="hero">
+    <img src="images/logo.svg" alt="logo_huddle" class="hero__logo">
+    <a href="#" class="hero__buttom">Try it free</a>
+  </header>
+
+  <main class="main">
+
+    <section class="main__header">
+
+      <h1 class="main__title title">Build The Community Your Fans Will Love</h1>
+  
+      <p class="main__paragraph">  Huddle re-imagines the way we build communities. You have a voice, but so does 
+        your audience. Create connections with your users as you engage in genuine discussion.
+      </p>
+  
+      <a href="#" class="main__cta cta">Get Started For Free</a>
+  
+      <figure class="main__figure">
+        <img src="images/screen-mockups.svg" alt="" class="main__img">
+      </figure>
+      
+    </section>
+
+    <section class="main__numbers">
+
+      <div class="main__stats">
+        <figure class="stats__container">
+          <img src="images/icon-communities.svg" alt="gente junta" class="stats__img">
+        </figure>
+
+        <p class="stats__num">1.4k+</p>
+
+        <p class="stats__text">Communities Formed</p>
+      </div>
+
+      <div class="main__stats">
+        <figure class="stats__container">
+          <img src="images/icon-messages.svg" alt="gente junta" class="stats__img">
+        </figure>
+
+        <p class="stats__num">2.7m+</p>
+
+        <p class="stats__text">Messages Sent</p>
+      </div>
+
+    </section>
+
+    <section class="main__body">
+
+      <div class="body__part1 body__part">
+        <div class="body__texts">
+          <h2 class="subtitle">Grow Together</h2>
+          <p class="body__paragraph">Generate meaningful discussions with your audience and build a strong, loyal community. 
+            Think of the insightful conversations you miss out on with a feedback form. 
+          </p>
+        </div>
+        <figure class="body__figure">
+          <img src="images/illustration-grow-together.svg" alt="" class="body__img">
+        </figure>
+      </div>
+
+      <div class="body__part2 body__part">
+        <div class="body__texts">
+          <h2 class="subtitle">Flowing Conversations</h2>
+          <p class="body__paragraph"> You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
+            just-in-time loading for a more natural flow.
+          </p>
+        </div>
+        <figure class="body__figure">
+          <img src="images/illustration-flowing-conversation.svg" alt="" class="body__img">
+        </figure>
+      </div>
+
+      <div class="body__part3 body__part">
+        <div class="body__texts">
+          <h2 class="subtitle">Your Users</h2>
+          <p class="body__paragraph">It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
+            once signed in to your app, your users can start chatting immediately.
+          </p>
+        </div>
+        <figure class="body__figure">
+          <img src="images/illustration-your-users.svg" alt="" class="body__img">
+        </figure>
+      </div>
+
+      <div class="body__bot">
+        <p class="subtitle">Ready To Build Your Community?</p>
+        <a href="#" class="bot__cta cta">Get Started For Free</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
     
+    <div class="footer__wave wave"></div>
+    <section class="footer">
+      <div class="footer__left footer__side">
+
+        <figure class="footer__container">
+          <img src="images/logo_white.svg" alt="">
+        </figure>
+
+        <p class="footer__paragraph">  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
+          vestibulum a, ultrices quis sem.</p>
+
+        <div class="footer__contact">
+          <figure class="footer__container">
+            <img src="images/icon-phone.svg" alt="">
+          </figure>
+          <p class="footer__paragraph">Phone: +1-543-123-4567</p>
+          
+        </div>
+
+        <div class="footer__contact">
+          <figure class="footer__container">
+            <img src="images/icon-email.svg" alt="">
+          </figure>
+          <p class="footer__paragraph">exampl@gmail.com</p>
+          
+        </div>
+
+        <div class="footer_media">
+
+          <img src="images/facebook_icon.svg" alt="" class="media__icon">
+          <img src="images/instagram_icon.svg" alt="" class="media__icon">
+          <img src="images/twitter_icon.svg" alt="" class="media__icon">
+
+        </div>
+      </div>
+
+      <div class="footer__right footer__side">
+        <h3 class="right__title">NEWSLETTER</h3>
+        <P class="right__paragraph">to ricives tips on how to grow your community sing up to our weekly newsletter. we´ll never send you spam or pass ypur mail address</P>
+        
+        <div class="right__new--contact">
+          <div class="email__input">
+            <input type="email" name="" id="email" class="email">
+            <label class="error" for="email">check your email address</label>
+          </div>
+          <input type="submit" value="Subscribe" class="subscribe cta">
+        </div>
+
+      </div>
+    </section>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Tomas Curti</a>.
+    </p>
+  </footer>
+
 </body>
 </html>
